@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'self' https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
@@ -11,18 +11,39 @@
     <title>Sistema MTC® | mejoratucanal.com</title>
     
     <link rel="canonical" href="https://mejoratucanal.github.io/">
-    <link rel="indexnow" href="https://www.bing.com/indexnow">
+    <link rel="manifest" href="manifest.json">
+    <link rel="indexnow" href="https://www.bing.com/indexnow?key=mtc-indexnow-mejoratucanal">
+    <meta name="yep-index" content="index">
     <meta name="robots" content="index, follow, max-image-preview:large">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sistema MTC® | Ingeniería Comercial de Guerra">
-    <meta property="og:image" content="https://mejoratucanal.github.io/banner.webp">
+    <meta property="og:description" content="Manuales técnicos y activos estratégicos para el dominio del mercado.">
+    <meta property="og:image" content="https://mejoratucanal.github.io/logo.png">
+    <meta property="og:url" content="https://mejoratucanal.github.io/">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sistema MTC®">
+    <meta name="twitter:description" content="Domina tu nicho con ingeniería comercial de precisión.">
+    <meta name="twitter:image" content="https://mejoratucanal.github.io/logo.png">
+    
+    <meta name="DC.title" content="Sistema MTC®">
+    <meta name="DC.creator" content="MejoraTuCanal">
+    <meta name="DC.language" content="es">
 
     <link rel="icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" href="logo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="logo.png" as="image" fetchpriority="high">
-    <link rel="preload" href="banner.webp" as="image" fetchpriority="high">
+
+    <link rel="indexnow" href="https://www.bing.com/indexnow">
+    <meta name="yep-index" content="index">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="logo.png" as="image" fetchpriority="high">
+
+    <meta name="description" content="Sistema MTC® — Arquitectura SEO para algoritmos. Estructura redes, páginas y nodos semánticos para maximizar indexación, autoridad, visibilidad y vigencia orgánica.">
+    <meta name="keywords" content="SEO redes sociales, arquitectura SEO, ecosistema digital, autoridad digital, SEO YouTube, SEO Instagram, SEO TikTok, SEO LinkedIn, automatización redes sociales, sistema MTC, mejoratucanal">
 
     <script type="application/ld+json">
     {
@@ -37,8 +58,17 @@
             "https://www.youtube.com/@Mejoratucanal-yt",
             "https://www.instagram.com/mejoratucanal",
             "https://www.tiktok.com/@mejoratucanal",
-            "https://x.com/MejoraTuCanal"
+            "https://x.com/MejoraTuCanal",
+            "https://es.pinterest.com/mejoratucanal"
           ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Sistema MTC®",
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".hero-def", ".about p"]
+          }
         }
       ]
     }
@@ -56,28 +86,28 @@
             line-height: 1.6; overflow-x: hidden; 
         }
         body::before {
-            content: ''; position: fixed; inset: 0;
+            content: ''; position: fixed; inset: 0; transform: translateZ(0);
             background-image: linear-gradient(rgba(0,194,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(0,194,255,0.02) 1px, transparent 1px);
             background-size: 60px 60px; z-index: 0; pointer-events: none;
         }
         .wrap { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 0 24px; }
         
-        header { padding: 40px 0; display: flex; align-items: center; justify-content: space-between; }
+        header { padding: 40px 0; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 100; }
         .brand { display: flex; align-items: center; gap: 12px; }
         .logo-img { width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--accent); }
         .logo-txt { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 16px; color: #fff; }
-        .ia-ready { font-size: 10px; border: 1px solid var(--accent); padding: 4px 12px; border-radius: 20px; color: var(--accent); font-weight: bold; }
+        .logo-link { font-size: 11px; color: var(--muted); text-decoration: none; display: block; position: relative; z-index: 110; cursor: pointer; }
+        .logo-link:hover { color: var(--accent); }
+        
+        /* ETIQUETA IA-READY RESTAURADA */
+        .ia-ready { font-size: 10px; border: 1px solid var(--accent); padding: 4px 12px; border-radius: 20px; color: var(--accent); font-weight: bold; letter-spacing: 1px; }
 
-        /* EL NODO VISUAL: BANNER DE GUERRA */
-        .banner-container { width: 100%; margin: 20px 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
-        .banner-container img { width: 100%; height: auto; display: block; }
-
-        .hero { padding: 40px 0 60px; text-align: center; }
+        .hero { padding: 80px 0 60px; text-align: center; }
         .hero h1 { font-family: 'Syne', sans-serif; font-size: clamp(34px, 5vw, 56px); line-height: 1.1; margin-bottom: 24px; color: #fff; }
         .hero h1 span { color: var(--accent); }
         .hero-def { display: inline-block; background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 20px; text-align: left; border-radius: 0 8px 8px 0; max-width: 600px; font-size: 14px; }
 
-        .grid-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-top: 40px; }
+        .grid-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-top: 40px; }
         .box { background: var(--surface); padding: 30px; }
         .box h3 { font-family: 'Syne', sans-serif; font-size: 14px; color: #fff; margin-bottom: 10px; }
         .box p { font-size: 13px; color: var(--muted); }
@@ -90,7 +120,13 @@
         .dot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; }
         .nodo:hover { background: #151c24; transform: translateY(-2px); }
 
+        .pronto { border: 1px solid var(--border); background: var(--surface); padding: 30px; border-radius: 12px; margin-top: 40px; display: flex; justify-content: space-between; align-items: center; }
+        .pronto-tag { background: var(--accent); color: #000; padding: 4px 12px; border-radius: 6px; font-weight: bold; font-size: 12px; }
+        
+        .closing { text-align: center; padding: 60px 0; font-size: 20px; }
         footer { border-top: 1px solid var(--border); padding: 30px 0; display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
+        
+        @media (max-width: 600px) { .grid-box { grid-template-columns: 1fr; } .pronto { flex-direction: column; text-align: center; gap: 20px; } }
     </style>
 </head>
 <body>
@@ -98,45 +134,77 @@
         <header>
             <div class="brand">
                 <img src="logo.png" alt="Logo" class="logo-img">
-                <div class="logo-txt">Sistema MTC®</div>
+                <div>
+                    <div class="logo-txt">Sistema MTC®</div>
+                    <a href="https://www.mejoratucanal.com" class="logo-link" target="_blank">mejoratucanal.com</a>
+                </div>
             </div>
             <div class="ia-ready">IA-READY</div>
         </header>
 
-        <div class="banner-container">
-            <img src="banner.webp" alt="Arquitectura SEO MejoraTuCanal">
-        </div>
-
         <main>
             <section class="hero">
+                <p style="color:var(--accent); font-size:12px; letter-spacing:2px; margin-bottom:20px;">SISTEMA MTC® — ARQUITECTURA SEO</p>
                 <h1>Tus redes sociales<br>como <span>ecosistema</span><br>de valor.</h1>
                 <div class="hero-def">
                     <strong>MTC® es arquitectura SEO para algoritmos.</strong><br>
-                    Estructura redes, páginas y nodos semánticos para maximizar indexación y autoridad.
+                    Estructura redes, páginas y nodos semánticos para maximizar indexación, autoridad, visibilidad y vigencia orgánica.
                 </div>
             </section>
 
             <div class="grid-box">
-                <div class="box"><h3>SEO Profesional</h3><p>Posicionamiento orgánico en ecosistemas de valor interconectados.</p></div>
-                <div class="box"><h3>IA Aplicada</h3><p>Agentes y GPTs especializados para el dominio digital.</p></div>
-                <div class="box"><h3>Automatización</h3><p>Flujos inteligentes que operan sin dependencia de publicidad paga.</p></div>
+                <div class="box"><h3>SEO Profesional</h3><p>Posicionamiento orgánico en YouTube, Instagram, TikTok, LinkedIn, Facebook, X y más. Nodos semánticos, autoridad digital y ecosistemas de valor interconectados.</p></div>
+                <div class="box"><h3>Inteligencia Artificial</h3><p>GPTs especializados y agentes IA diseñados para creadores y profesionales del ecosistema digital. Herramientas que trabajan con tu sistema, no al margen de él.</p></div>
+                <div class="box"><h3>Automatización</h3><p>Flujos inteligentes que operan cuando vos no estás. Contenido estructurado en escala, sin fricción, sin dependencia de publicidad paga.</p></div>
             </div>
 
             <div class="about">
-                <h2>No es marketing. Es arquitectura.</h2>
-                <p style="color:var(--muted);">El Sistema MTC® convierte contenido aislado en una red de nodos semánticos que los algoritmos priorizan y amplifican.</p>
+                <h2>Cada pieza de contenido tiene una función técnica dentro del sistema.</h2>
+                <p style="margin-bottom:15px; color:var(--muted);">El Sistema MTC® convierte tus redes sociales en un ecosistema interconectado donde cada publicación cumple un rol estratégico dentro de una arquitectura semántica.</p>
+                <p style="margin-bottom:15px; color:var(--muted);">En lugar de contenido aislado, construís una red de nodos que se refuerzan entre sí: atraen tráfico, educan audiencia, fortalecen señales algorítmicas y amplían tu posicionamiento orgánico con cada pieza que sumás.</p>
+                <p style="font-weight:bold;">No es presencia digital. Es arquitectura.</p>
+            </div>
+
+            <div class="grid-box">
+                <div class="box"><h3>01. Los algoritmos leen estructuras.</h3><p>MTC® organiza tu presencia digital para que los algoritmos puedan interpretarla, relacionarla e indexarla.</p></div>
+                <div class="box"><h3>02. La autoridad se construye con señales.</h3><p>MTC® define las señales temáticas y semánticas que los algoritmos reconocen y priorizan.</p></div>
+                <div class="box"><h3>03. La visibilidad depende de la interconexión.</h3><p>MTC® conecta redes, páginas y nodos semánticos en un sistema único legible para los algoritmos.</p></div>
+            </div>
+
+            <div class="about">
+                <h3>04. La vigencia algorítmica se sostiene con arquitectura.</h3>
+                <p style="color:var(--muted); margin-top:10px;">MTC® mantiene señales claras, estables y rastreables para que los algoritmos sigan indexando tu contenido, mostrándolo en búsquedas y sugeridos, y no lo declaren obsoleto.</p>
+                <h3 style="margin-top:20px;">05. El crecimiento orgánico es técnico.</h3>
+                <p style="color:var(--muted); margin-top:10px;">MTC® diseña la estructura que los algoritmos amplifican sin necesidad de publicidad paga.</p>
             </div>
 
             <div class="nodos">
-                <a href="https://www.youtube.com/@Mejoratucanal-yt" class="nodo" target="_blank"><div class="dot"></div><div><strong>YouTube</strong></div></a>
-                <a href="https://www.instagram.com/mejoratucanal" class="nodo" target="_blank"><div class="dot"></div><div><strong>Instagram</strong></div></a>
-                <a href="https://www.tiktok.com/@mejoratucanal" class="nodo" target="_blank"><div class="dot"></div><div><strong>TikTok</strong></div></a>
+                <a href="https://www.youtube.com/@Mejoratucanal-yt" class="nodo" target="_blank"><div class="dot"></div><div><strong>YouTube</strong><br><small>@Mejoratucanal-yt</small></div></a>
+                <a href="https://www.instagram.com/mejoratucanal" class="nodo" target="_blank"><div class="dot"></div><div><strong>Instagram</strong><br><small>@mejoratucanal</small></div></a>
+                <a href="https://www.tiktok.com/@mejoratucanal" class="nodo" target="_blank"><div class="dot"></div><div><strong>TikTok</strong><br><small>@mejoratucanal</small></div></a>
+                <a href="https://www.x.com/MejoraTuCanal" class="nodo" target="_blank"><div class="dot"></div><div><strong>X</strong><br><small>@MejoraTuCanal</small></div></a>
+                <a href="https://es.pinterest.com/mejoratucanal" class="nodo" target="_blank"><div class="dot"></div><div><strong>Pinterest</strong><br><small>@mejoratucanal</small></div></a>
+            </div>
+
+            <div class="pronto">
+                <div>
+                    <h3>Manuales, GPTs y recursos — próximamente</h3>
+                    <p style="font-size:13px; color:var(--muted);">Sistema MTC® · mejoratucanal.com · Todos los productos son de pago.</p>
+                </div>
+                <span class="pronto-tag">Muy pronto</span>
+            </div>
+
+            <div class="closing">
+                No es marketing en redes sociales.<br><strong>Es arquitectura SEO.</strong>
             </div>
         </main>
 
         <footer>
-            <p>© 2026 Sistema MTC® · mejoratucanal.com</p>
-            <a href="/llms.txt" style="color:var(--muted); text-decoration:none;">llms.txt</a>
+            <p>© 2026 Sistema MTC® · Todos los derechos reservados</p>
+            <div>
+                <a href="https://www.mejoratucanal.com" target="_blank" style="color:var(--muted); text-decoration:none;">mejoratucanal.com</a>
+                <a href="/llms.txt" style="margin-left:20px; color:var(--muted); text-decoration:none;">llms.txt</a>
+            </div>
         </footer>
     </div>
 </body>
