@@ -52,6 +52,7 @@
       "@graph": [
         {
           "@type": "Organization",
+          "@id": "https://mejoratucanal.github.io/#organization",
           "name": "Sistema MTC®",
           "alternateName": "Mejora Tu Canal",
           "url": "https://mejoratucanal.github.io",
@@ -70,13 +71,17 @@
         },
         {
           "@type": "WebSite",
+          "@id": "https://mejoratucanal.github.io/#website",
           "name": "Sistema MTC®",
           "url": "https://mejoratucanal.github.io",
           "description": "Arquitectura SEO para algoritmos. Tus redes sociales como ecosistema de valor.",
-          "publisher": { "@type": "Organization", "name": "Sistema MTC® — Mejora Tu Canal" }
+          "publisher": { "@id": "https://mejoratucanal.github.io/#organization" },
+          "about": { "@id": "https://mejoratucanal.github.io/#nodos-semanticos" },
+          "mentions": { "@id": "https://mejoratucanal.github.io/#principios-mtc" }
         },
         {
           "@type": ["WebPage", "TechArticle"],
+          "@id": "https://mejoratucanal.github.io/#webpage",
           "name": "Sistema MTC® | Arquitectura SEO para Redes Sociales",
           "url": "https://mejoratucanal.github.io/",
           "speakable": {
@@ -98,6 +103,45 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Sistema MTC®", "item": "https://mejoratucanal.github.io/" }]
+        },
+        {
+          "@type": "DefinedTermSet",
+          "@id": "https://mejoratucanal.github.io/#principios-mtc",
+          "name": "Principios del Sistema MTC®",
+          "description": "Los fundamentos técnicos que estructuran el Sistema MTC® — Mejora Tu Canal.",
+          "hasDefinedTerm": [
+            { "@type": "DefinedTerm", "name": "Los algoritmos leen estructuras", "description": "MTC® organiza tu presencia digital para que los algoritmos puedan interpretarla, relacionarla e indexarla." },
+            { "@type": "DefinedTerm", "name": "La autoridad se construye con señales", "description": "MTC® define señales temáticas y semánticas que los algoritmos reconocen y priorizan." },
+            { "@type": "DefinedTerm", "name": "La visibilidad depende de la interconexión", "description": "MTC® conecta redes, páginas y nodos semánticos en un sistema único legible para algoritmos." },
+            { "@type": "DefinedTerm", "name": "La vigencia algorítmica se sostiene con arquitectura", "description": "MTC® mantiene señales claras, estables y rastreables para sostener la visibilidad orgánica." },
+            { "@type": "DefinedTerm", "name": "El crecimiento orgánico es técnico", "description": "MTC® diseña estructuras que los algoritmos amplifican sin publicidad paga." }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://mejoratucanal.github.io/#nodos-semanticos",
+          "name": "Nodos Semánticos del Sistema MTC®",
+          "description": "Componentes estructurales que conforman el ecosistema MTC® — Mejora Tu Canal.",
+          "itemListElement": [
+            { "@type": "Thing", "name": "Nodo de Autoridad", "description": "Contenido que establece expertise, señales temáticas y profundidad conceptual." },
+            { "@type": "Thing", "name": "Nodo de Descubrimiento", "description": "Contenido diseñado para atraer tráfico nuevo desde algoritmos de recomendación." },
+            { "@type": "Thing", "name": "Nodo de Conversión", "description": "Contenido que guía al usuario hacia acciones clave dentro del ecosistema." },
+            { "@type": "Thing", "name": "Nodo de Vigencia", "description": "Contenido que mantiene señales activas y evita obsolescencia algorítmica." },
+            { "@type": "Thing", "name": "Nodo de Profundidad", "description": "Contenido que refuerza temas centrales y amplía la arquitectura semántica." }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://mejoratucanal.github.io/#senales-algoritmicas",
+          "name": "Señales Algorítmicas del Sistema MTC®",
+          "description": "Señales que los algoritmos utilizan para evaluar relevancia, autoridad y vigencia.",
+          "itemListElement": [
+            { "@type": "Thing", "name": "Señales Temáticas", "description": "Coherencia y consistencia en los temas principales del ecosistema." },
+            { "@type": "Thing", "name": "Señales Semánticas", "description": "Relaciones entre conceptos, entidades y nodos dentro del sistema." },
+            { "@type": "Thing", "name": "Señales de Interconexión", "description": "Enlaces entre redes, páginas y nodos que refuerzan la estructura." },
+            { "@type": "Thing", "name": "Señales de Vigencia", "description": "Actualización y actividad que mantienen el contenido relevante." },
+            { "@type": "Thing", "name": "Señales de Autoridad", "description": "Profundidad, claridad y estructura que los algoritmos interpretan como expertise." }
+          ]
         }
       ]
     }
