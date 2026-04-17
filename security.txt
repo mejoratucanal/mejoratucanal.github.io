@@ -1,0 +1,4 @@
+Contact: mailto:mejoratucanal.yt@gmail.com
+Preferred-Languages: es, en
+Canonical: https://mejoratucanal.github.io/.well-known/security.txt
+Expires: 2027-04-11T00:00:00.000Z
